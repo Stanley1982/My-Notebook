@@ -239,7 +239,7 @@ html_search_language = 'zh'
 # 'ja' uses this config value.
 # 'zh' user can custom change `jieba` dictionary path.
 #
-html_search_options = {'dict': 'C:\WinPython-64bit-2.7.9.5\python-2.7.9.amd64\Lib\site-packages\jieba'}
+html_search_options = {'dict': 'C:\Program Files\Anaconda3\Lib\site-packages\jieba'}
 
 # The name of a javascript file (relative to the configuration directory) that
 # implements a search results scorer. If empty, the default will be used.
