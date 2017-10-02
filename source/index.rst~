@@ -2,31 +2,29 @@
    sphinx-quickstart on Sat Aug 27 19:56:36 2016.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
-
+==============================
 欢迎来到笔记本
-=============================
+==============================
 
 =====================
-工作区域
+理论知识
 =====================
 
 
 .. toctree::
    :maxdepth: 2
 
-   2017-1-2 智能化网络应用.rst
 
 
 
 
 ===========================
-健身记录
+工具
 ===========================
 
 .. toctree::
    :maxdepth: 2
 
-   2017-1-2 健身记录.rst
 
 
 ======================
@@ -35,8 +33,6 @@
 
 .. toctree::
    :maxdepth: 2
-
-
 
 
    
