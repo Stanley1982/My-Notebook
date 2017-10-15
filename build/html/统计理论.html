@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>智能化网络应用 &#8212; MyRecord 0.1 文档</title>
+    <title>统计理论 &#8212; MyRecord 0.1 文档</title>
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript">
@@ -25,7 +25,8 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
-    <link rel="prev" title="在Python里使用Excel的数据分析功能" href="在Python里使用Excel的数据分析功能.html" /> 
+    <link rel="next" title="在Python里使用Excel的数据分析功能" href="在Python里使用Excel的数据分析功能.html" />
+    <link rel="prev" title="欢迎来到笔记本" href="index.html" /> 
   </head>
   <body>
     <div class="related" role="navigation" aria-label="related navigation">
@@ -36,6 +37,9 @@
              accesskey="I">索引</a></li>
         <li class="right" >
           <a href="在Python里使用Excel的数据分析功能.html" title="在Python里使用Excel的数据分析功能"
+             accesskey="N">下一页</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="欢迎来到笔记本"
              accesskey="P">上一页</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">MyRecord 0.1 文档</a> &#187;</li> 
       </ul>
@@ -47,9 +51,81 @@
           <div class="body" role="main">
             
   <div class="section" id="rst">
-<span id="id1"></span><h1>智能化网络应用<a class="headerlink" href="#rst" title="永久链接至标题">¶</a></h1>
-<p>1.NodeB 这么多参数，现网上是怎么使用的？</p>
-<p>2.FMA收集用户的使用习惯，分析出平时运维时更加关注的是什么类型的数据？和什么的数据做相关性分析？</p>
+<span id="id1"></span><h1>统计理论<a class="headerlink" href="#rst" title="永久链接至标题">¶</a></h1>
+<img alt="_images/概率和推断.png" src="_images/概率和推断.png" />
+<p>第一部分概率论：不确定性，统计推断的基础</p>
+<blockquote>
+<div>给一个数据生成的过程，结果的属性是什么？</div></blockquote>
+<p>第二部分统计推断和他的近亲，数据挖掘和机器学习</p>
+<blockquote>
+<div>给出数据的结果，我们能说数据生成的过程是怎么样的？</div></blockquote>
+<p>预测，分类，聚类，估计是统计推断。数据分析，机器学习和数据挖掘是统计推断的应用</p>
+<p>统计、数据挖掘字典</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="31%" />
+<col width="16%" />
+<col width="53%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">统计</th>
+<th class="head">计算机科学</th>
+<th class="head">含义</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>估计</td>
+<td>学习</td>
+<td>使用数据去估计未知的属性</td>
+</tr>
+<tr class="row-odd"><td>分类</td>
+<td>监督学习</td>
+<td>通过X预测离散的Y</td>
+</tr>
+<tr class="row-even"><td>聚类</td>
+<td>非监督学习</td>
+<td>把数据分组</td>
+</tr>
+<tr class="row-odd"><td>数据</td>
+<td>训练样本</td>
+<td>(X1,Y1),…,(Xn,Yn)</td>
+</tr>
+<tr class="row-even"><td>协变量</td>
+<td>特征</td>
+<td>Xi’s</td>
+</tr>
+<tr class="row-odd"><td>分类器</td>
+<td>假设</td>
+<td>协变量到结果的映射</td>
+</tr>
+<tr class="row-even"><td>假设</td>
+<td>–</td>
+<td>参数空间 的子集</td>
+</tr>
+<tr class="row-odd"><td>置信空间</td>
+<td>–</td>
+<td>空间包含未知属性</td>
+</tr>
+<tr class="row-even"><td>有向非循环图</td>
+<td>贝叶斯网络</td>
+<td>多维分布给定条件独立关系</td>
+</tr>
+<tr class="row-odd"><td>贝叶斯推断</td>
+<td>贝叶斯推断</td>
+<td>统计方法通过数据更新信念</td>
+</tr>
+<tr class="row-even"><td>频率推断</td>
+<td>–</td>
+<td>通过保障频率方法的统计方法</td>
+</tr>
+<tr class="row-odd"><td>large deviation bounds</td>
+<td>PAC学习</td>
+<td>uniform bounds on probability of errors</td>
+</tr>
+</tbody>
+</table>
+<p>图片
+.. image:: _static/概率和推断.png</p>
 </div>
 
 
@@ -59,12 +135,15 @@
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <h4>上一个主题</h4>
+  <p class="topless"><a href="index.html"
+                        title="上一章">欢迎来到笔记本</a></p>
+  <h4>下一个主题</h4>
   <p class="topless"><a href="在Python里使用Excel的数据分析功能.html"
-                        title="上一章">在Python里使用Excel的数据分析功能</a></p>
+                        title="下一章">在Python里使用Excel的数据分析功能</a></p>
   <div role="note" aria-label="source link">
     <h3>本页</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/2017-1-2 智能化网络应用.rst.txt"
+      <li><a href="_sources/统计理论.rst.txt"
             rel="nofollow">显示源代码</a></li>
     </ul>
    </div>
@@ -90,6 +169,9 @@
              >索引</a></li>
         <li class="right" >
           <a href="在Python里使用Excel的数据分析功能.html" title="在Python里使用Excel的数据分析功能"
+             >下一页</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="欢迎来到笔记本"
              >上一页</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">MyRecord 0.1 文档</a> &#187;</li> 
       </ul>
