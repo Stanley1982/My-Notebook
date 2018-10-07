@@ -4,20 +4,12 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>统计理论 All of statistics学习笔记 &#8212; MyRecord 0.1 文档</title>
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '0.1',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-      };
-    </script>
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
@@ -27,8 +19,7 @@
     <link rel="search" title="搜索" href="search.html" />
     <link rel="next" title="在Python里使用Excel的数据分析功能" href="在Python里使用Excel的数据分析功能.html" />
     <link rel="prev" title="欢迎来到笔记本" href="index.html" /> 
-  </head>
-  <body>
+  </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>导航</h3>
       <ul>
@@ -90,11 +81,11 @@
 </tr>
 <tr class="row-odd"><td>数据</td>
 <td>训练样本</td>
-<td><span class="math">\((X_{1},X_{1}),...,(X_{n},Y_{n})\)</span></td>
+<td><span class="math notranslate nohighlight">\((X_{1},X_{1}),...,(X_{n},Y_{n})\)</span></td>
 </tr>
 <tr class="row-even"><td>协变量</td>
 <td>特征</td>
-<td><span class="math">\(X_{i}'s\)</span></td>
+<td><span class="math notranslate nohighlight">\(X_{i}'s\)</span></td>
 </tr>
 <tr class="row-odd"><td>分类器</td>
 <td>假设</td>
@@ -102,7 +93,7 @@
 </tr>
 <tr class="row-even"><td>假设</td>
 <td>–</td>
-<td>参数空间 <span class="math">\(\Theta\)</span> 的子集</td>
+<td>参数空间 <span class="math notranslate nohighlight">\(\Theta\)</span> 的子集</td>
 </tr>
 <tr class="row-odd"><td>置信空间</td>
 <td>–</td>
@@ -143,45 +134,45 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><span class="math">\(\Omega\)</span></td>
+<tr class="row-even"><td><span class="math notranslate nohighlight">\(\Omega\)</span></td>
 <td>样本空间</td>
 </tr>
-<tr class="row-odd"><td><span class="math">\(\omega\)</span></td>
+<tr class="row-odd"><td><span class="math notranslate nohighlight">\(\omega\)</span></td>
 <td>结果（点或元素）</td>
 </tr>
-<tr class="row-even"><td><span class="math">\(A\)</span></td>
+<tr class="row-even"><td><span class="math notranslate nohighlight">\(A\)</span></td>
 <td>事件（样本空间的子集）</td>
 </tr>
-<tr class="row-odd"><td><span class="math">\(A^c\)</span></td>
+<tr class="row-odd"><td><span class="math notranslate nohighlight">\(A^c\)</span></td>
 <td>A的补充（非A）</td>
 </tr>
-<tr class="row-even"><td><span class="math">\(A \cup B\)</span></td>
+<tr class="row-even"><td><span class="math notranslate nohighlight">\(A \cup B\)</span></td>
 <td>并（A或者B）</td>
 </tr>
-<tr class="row-odd"><td><span class="math">\(A \cap B or
+<tr class="row-odd"><td><span class="math notranslate nohighlight">\(A \cap B or
 AB\)</span></td>
 <td>交（A且B）</td>
 </tr>
-<tr class="row-even"><td><span class="math">\(A-B\)</span></td>
-<td>差（<span class="math">\(\omega\)</span> 属于A但不属于B）</td>
+<tr class="row-even"><td><span class="math notranslate nohighlight">\(A-B\)</span></td>
+<td>差（<span class="math notranslate nohighlight">\(\omega\)</span> 属于A但不属于B）</td>
 </tr>
-<tr class="row-odd"><td><span class="math">\(A \subset B\)</span></td>
+<tr class="row-odd"><td><span class="math notranslate nohighlight">\(A \subset B\)</span></td>
 <td>A属于B</td>
 </tr>
-<tr class="row-even"><td><span class="math">\(\emptyset\)</span></td>
+<tr class="row-even"><td><span class="math notranslate nohighlight">\(\emptyset\)</span></td>
 <td>假事件（永远为假）</td>
 </tr>
-<tr class="row-odd"><td><span class="math">\(\Omega\)</span></td>
+<tr class="row-odd"><td><span class="math notranslate nohighlight">\(\Omega\)</span></td>
 <td>真事件（永远为真）</td>
 </tr>
 </tbody>
 </table>
 <p>概率</p>
-<p>定义：函数 <span class="math">\(P\)</span> 用一个实数 <span class="math">\(P(A)\)</span> 去代表每个事件 <span class="math">\(A\)</span> 的概率分布或者概率测量，如果满足一下三个公理</p>
-<p>1：<span class="math">\(P(A) \geq 0\)</span>,对于每个事件A</p>
-<p>2：<span class="math">\(P(\Omega) = 1\)</span></p>
-<p>3: 如果 <span class="math">\(A_{1},A_{2},...\)</span> 是非连续的，那么有</p>
-<p><span class="math">\(P \left( \begin{matrix} \bigcup_{i=1}^{\infty} \end{matrix} \right) = \Sigma_{i=1}^{\infty}P \left( A_i \right)\)</span></p>
+<p>定义：函数 <span class="math notranslate nohighlight">\(P\)</span> 用一个实数 <span class="math notranslate nohighlight">\(P(A)\)</span> 去代表每个事件 <span class="math notranslate nohighlight">\(A\)</span> 的概率分布或者概率测量，如果满足一下三个公理</p>
+<p>1：<span class="math notranslate nohighlight">\(P(A) \geq 0\)</span>,对于每个事件A</p>
+<p>2：<span class="math notranslate nohighlight">\(P(\Omega) = 1\)</span></p>
+<p>3: 如果 <span class="math notranslate nohighlight">\(A_{1},A_{2},...\)</span> 是非连续的，那么有</p>
+<p><span class="math notranslate nohighlight">\(P \left( \begin{matrix} \bigcup_{i=1}^{\infty} \end{matrix} \right) = \Sigma_{i=1}^{\infty}P \left( A_i \right)\)</span></p>
 <p>有两种方式解释频率:math:<cite>P(A)</cite> ，一种是频率，另一种是可信度。分别对应频率派和贝叶斯派。</p>
 </div>
 <div class="section" id="id4">
@@ -207,10 +198,10 @@ AB\)</span></td>
 <p>统计推断，在计算机中称为“学习”，一个典型的统计推断的问题是</p>
 <blockquote>
 <div><ul class="simple">
-<li>给定样板 <span class="math">\(X_{1},...,X_{n} ~ F\)</span> ,我们如何推断 <span class="math">\(F\)</span> ？</li>
+<li>给定样板 <span class="math notranslate nohighlight">\(X_{1},...,X_{n} ~ F\)</span> ,我们如何推断 <span class="math notranslate nohighlight">\(F\)</span> ？</li>
 </ul>
 </div></blockquote>
-<p>在一些情况下我们只推断 <span class="math">\(F\)</span> 的特征比如平均值</p>
+<p>在一些情况下我们只推断 <span class="math notranslate nohighlight">\(F\)</span> 的特征比如平均值</p>
 <div class="section" id="id11">
 <h4>参数模型和非参数模型<a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h4>
 <p>参数模型：通过有限个参数可以确定的模型，比如正态分布</p>
@@ -227,11 +218,11 @@ AB\)</span></td>
 <h3>10. 假设检验和p值<a class="headerlink" href="#p" title="永久链接至标题">¶</a></h3>
 <dl class="docutils">
 <dt>假设检验更多是告诉我们去拒绝某个结论，除非这个结论是唯一的，不然我们无法假定</dt>
-<dd><span class="math">\(H_{0}\)</span> 就是正确的。</dd>
+<dd><span class="math notranslate nohighlight">\(H_{0}\)</span> 就是正确的。</dd>
 </dl>
 <p>10.8 拟合检验</p>
 <p>用卡方拟合检验的严重限制：</p>
-<p>如果拒绝 <span class="math">\(H_{0}\)</span> 那么我们可以根据我们不接受这个模型。如果我们不拒绝 <span class="math">\(H_{0}\)</span> ，我们也不能说这个模型是正确的。因为这个检验没有足够的功效，所以我们只能简单的拒绝。所以说在尽可能的情况下使用非参数法而不是参数假设。</p>
+<p>如果拒绝 <span class="math notranslate nohighlight">\(H_{0}\)</span> 那么我们可以根据我们不接受这个模型。如果我们不拒绝 <span class="math notranslate nohighlight">\(H_{0}\)</span> ，我们也不能说这个模型是正确的。因为这个检验没有足够的功效，所以我们只能简单的拒绝。所以说在尽可能的情况下使用非参数法而不是参数假设。</p>
 </div>
 </div>
 <div class="section" id="id13">
@@ -288,12 +279,14 @@ AB\)</span></td>
    </div>
 <div id="searchbox" style="display: none" role="search">
   <h3>快速搜索</h3>
+    <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="转向" /></div>
+      <input type="text" name="q" />
+      <input type="submit" value="转向" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
+    </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
@@ -316,8 +309,8 @@ AB\)</span></td>
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2016, Stanley Zheng.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3 创建。
+        &#169; 版权所有 2016, Stanley Zheng.
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.9 创建。
     </div>
   </body>
 </html>
