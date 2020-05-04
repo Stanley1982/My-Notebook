@@ -36,8 +36,11 @@ extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.coverage',
     'sphinx.ext.mathjax',
+    'sphinx.ext.graphviz',
     'sphinx.ext.githubpages',
+    'sphinxcontrib.mermaid'
 ]
+
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -57,7 +60,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'MyRecord'
-copyright = u'2016, Stanley Zheng'
+copyright = u'2019, Stanley Zheng'
 author = u'Stanley Zheng'
 
 # The version info for the project you're documenting, acts as replacement for

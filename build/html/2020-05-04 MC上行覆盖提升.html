@@ -4,7 +4,7 @@
 <html lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <title>在Python里使用Excel的数据分析功能 &#8212; MyRecord 0.1 文档</title>
+    <title>2020-05-04 MC上行覆盖提升 &#8212; MyRecord 0.1 文档</title>
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/graphviz.css" />
@@ -20,8 +20,8 @@
     
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
-    <link rel="next" title="电力相关记录" href="电力相关记录.html" />
-    <link rel="prev" title="统计理论 All of statistics学习笔记" href="统计理论.html" /> 
+    <link rel="next" title="智能化网络应用" href="2017-1-2 智能化网络应用.html" />
+    <link rel="prev" title="Massive MIMO规划" href="2018-12-30 Massive MIMO规划.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>导航</h3>
@@ -30,10 +30,10 @@
           <a href="genindex.html" title="总目录"
              accesskey="I">索引</a></li>
         <li class="right" >
-          <a href="电力相关记录.html" title="电力相关记录"
+          <a href="2017-1-2 智能化网络应用.html" title="智能化网络应用"
              accesskey="N">下一页</a> |</li>
         <li class="right" >
-          <a href="统计理论.html" title="统计理论 All of statistics学习笔记"
+          <a href="2018-12-30 Massive MIMO规划.html" title="Massive MIMO规划"
              accesskey="P">上一页</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">MyRecord 0.1 文档</a> &#187;</li> 
       </ul>
@@ -44,31 +44,40 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="pythonexcel">
-<span id="pythonexcel-rst"></span><h1>在Python里使用Excel的数据分析功能<a class="headerlink" href="#pythonexcel" title="永久链接至标题">¶</a></h1>
-<p>Why为什么要这么做？</p>
-<p>excel不适合批量操作</p>
-<p>当数据量比较大时，内存可能会不足</p>
-<div class="section" id="excel">
-<h2>Excel的常用功能有哪些<a class="headerlink" href="#excel" title="永久链接至标题">¶</a></h2>
-<p>除去重复数据</p>
-<p>vlookup</p>
-<p>透视表</p>
-<p>frequency函数</p>
-<p>散点图</p>
+  <div class="section" id="mc">
+<span id="id1"></span><h1>2020-05-04 MC上行覆盖提升<a class="headerlink" href="#mc" title="永久链接至标题">¶</a></h1>
+<div class="section" id="id2">
+<h2>价值<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>AAU5726上行灵敏度相对于普通RRU差2dB，需要软件方案补齐。</p>
 </div>
-<div class="section" id="id1">
-<h2>数据清洗<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
-<ol class="arabic simple">
-<li><p>去重</p></li>
-</ol>
-<p>在数据中，因为导入，操作等各种原因，都会有重复数据发生，所以需要去重</p>
-<ol class="arabic simple">
-<li><p>去除NA</p></li>
-</ol>
-<p>分两种情况</p>
-<p>一种情况是都是无效值，直接去除</p>
-<p>另一种情况是部分无效值，这种情况下，可以考虑填充0或者插值</p>
+<div class="section" id="id3">
+<h2>方案<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p>采用上行窄波束联合接收32选8，相对于宽波束4收，可以提升覆盖~3dB。</p>
+<p>PUSCH的规格是单芯片12小区，支持1500RB。所有MC小区都采用联合接收会导致消耗资源增加，预估支持逻辑 600RB</p>
+</div>
+<div class="section" id="id4">
+<h2>关键问题<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<p>1、什么时候选4，什么时候选8</p>
+<p>2、如何判断选4，还是选8</p>
+<p>都依赖于链路仿真结果</p>
+<script>mermaid.initialize({startOnLoad:true});</script><div class="mermaid">
+            graph TD
+    A[SRS测量算法]--&gt;B[选择4还是8接收]
+    B--&gt;C[选择4接收]
+    B--&gt;D[选择8接收]
+    C--&gt;E[上行联合调度]
+    D--&gt;E
+    E--&gt;A
+        </div><p>Right</p>
+</div>
+<div class="section" id="id5">
+<h2>联系人<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<p>解决方案SE：尚瑜</p>
+<p>RRM算法：唐志华，刘曼</p>
+<p>RTT算法：李周琦，马曼丽，门锦锦</p>
+<p>产品SE：吴雪清</p>
+<p>基站SE：冯丰，张占全，马坤，陈振源</p>
+<p>MDE：袁涛，王婷婷</p>
 </div>
 </div>
 
@@ -80,23 +89,25 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">目录</a></h3>
   <ul>
-<li><a class="reference internal" href="#">在Python里使用Excel的数据分析功能</a><ul>
-<li><a class="reference internal" href="#excel">Excel的常用功能有哪些</a></li>
-<li><a class="reference internal" href="#id1">数据清洗</a></li>
+<li><a class="reference internal" href="#">2020-05-04 MC上行覆盖提升</a><ul>
+<li><a class="reference internal" href="#id2">价值</a></li>
+<li><a class="reference internal" href="#id3">方案</a></li>
+<li><a class="reference internal" href="#id4">关键问题</a></li>
+<li><a class="reference internal" href="#id5">联系人</a></li>
 </ul>
 </li>
 </ul>
 
   <h4>上一个主题</h4>
-  <p class="topless"><a href="统计理论.html"
-                        title="上一章">统计理论 All of statistics学习笔记</a></p>
+  <p class="topless"><a href="2018-12-30 Massive MIMO规划.html"
+                        title="上一章">Massive MIMO规划</a></p>
   <h4>下一个主题</h4>
-  <p class="topless"><a href="电力相关记录.html"
-                        title="下一章">电力相关记录</a></p>
+  <p class="topless"><a href="2017-1-2 智能化网络应用.html"
+                        title="下一章">智能化网络应用</a></p>
   <div role="note" aria-label="source link">
     <h3>本页</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/在Python里使用Excel的数据分析功能.rst.txt"
+      <li><a href="_sources/2020-05-04 MC上行覆盖提升.rst.txt"
             rel="nofollow">显示源代码</a></li>
     </ul>
    </div>
@@ -121,10 +132,10 @@
           <a href="genindex.html" title="总目录"
              >索引</a></li>
         <li class="right" >
-          <a href="电力相关记录.html" title="电力相关记录"
+          <a href="2017-1-2 智能化网络应用.html" title="智能化网络应用"
              >下一页</a> |</li>
         <li class="right" >
-          <a href="统计理论.html" title="统计理论 All of statistics学习笔记"
+          <a href="2018-12-30 Massive MIMO规划.html" title="Massive MIMO规划"
              >上一页</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">MyRecord 0.1 文档</a> &#187;</li> 
       </ul>

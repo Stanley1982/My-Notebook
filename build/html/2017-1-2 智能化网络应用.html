@@ -1,24 +1,26 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
+<html lang="zh_CN">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <title>智能化网络应用 &#8212; MyRecord 0.1 文档</title>
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/translations.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="stylesheet" type="text/css" href="_static/graphviz.css" />
+    
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/translations.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
     <link rel="next" title="多杆合一" href="2018-10-06 多杆合一.html" />
-    <link rel="prev" title="电力相关记录" href="电力相关记录.html" /> 
+    <link rel="prev" title="2020-05-04 MC上行覆盖提升" href="2020-05-04 MC上行覆盖提升.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>导航</h3>
@@ -30,7 +32,7 @@
           <a href="2018-10-06 多杆合一.html" title="多杆合一"
              accesskey="N">下一页</a> |</li>
         <li class="right" >
-          <a href="电力相关记录.html" title="电力相关记录"
+          <a href="2020-05-04 MC上行覆盖提升.html" title="2020-05-04 MC上行覆盖提升"
              accesskey="P">上一页</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">MyRecord 0.1 文档</a> &#187;</li> 
       </ul>
@@ -46,6 +48,21 @@
 <p>1.NodeB 这么多参数，现网上是怎么使用的？</p>
 <p>2.FMA收集用户的使用习惯，分析出平时运维时更加关注的是什么类型的数据？和什么的数据做相关性分析？</p>
 </div>
+<div class="section" id="id2">
+<h1>回退方案验证<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h1>
+<div class="section" id="kpi">
+<h2>KPI恶化判断方案<a class="headerlink" href="#kpi" title="永久链接至标题">¶</a></h2>
+<p>方案1：假设检验</p>
+<p>方案2：滤波值对比</p>
+<p>方案3：平均值对比</p>
+<p>方案4：Bootstrap</p>
+</div>
+<div class="section" id="id3">
+<h2>模拟数据<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p>频谱效率，恶化50%，恶化20%，恶化10%，恶化5%，无，增益 5%，增益10%，增益20%，增益50%</p>
+<p>联合用户数判断，当用户到一定程度的时候才进行判断</p>
+</div>
+</div>
 
 
           </div>
@@ -53,9 +70,19 @@
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">目录</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">智能化网络应用</a></li>
+<li><a class="reference internal" href="#id2">回退方案验证</a><ul>
+<li><a class="reference internal" href="#kpi">KPI恶化判断方案</a></li>
+<li><a class="reference internal" href="#id3">模拟数据</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>上一个主题</h4>
-  <p class="topless"><a href="电力相关记录.html"
-                        title="上一章">电力相关记录</a></p>
+  <p class="topless"><a href="2020-05-04 MC上行覆盖提升.html"
+                        title="上一章">2020-05-04 MC上行覆盖提升</a></p>
   <h4>下一个主题</h4>
   <p class="topless"><a href="2018-10-06 多杆合一.html"
                         title="下一章">多杆合一</a></p>
@@ -67,17 +94,15 @@
     </ul>
    </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>快速搜索</h3>
+  <h3 id="searchlabel">快速搜索</h3>
     <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="转向" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -92,14 +117,14 @@
           <a href="2018-10-06 多杆合一.html" title="多杆合一"
              >下一页</a> |</li>
         <li class="right" >
-          <a href="电力相关记录.html" title="电力相关记录"
+          <a href="2020-05-04 MC上行覆盖提升.html" title="2020-05-04 MC上行覆盖提升"
              >上一页</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">MyRecord 0.1 文档</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; 版权所有 2016, Stanley Zheng.
-      由 <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.9 创建。
+        &#169; 版权所有 2019, Stanley Zheng.
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.3 创建。
     </div>
   </body>
 </html>
